@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Case : Kepabeanan dan Cukai</title>
+    <style>
+        html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+        html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.background {
+  padding: 0 25px 25px;
+  position: relative;
+  width: 100%;
+}
+
+.background::after {
+  content: '';
+  background: #60a9ff;
+  background: -moz-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
+  background: -webkit-linear-gradient(top, #60a9ff 0%,#4394f4 100%);
+  background: linear-gradient(to bottom, #60a9ff 0%,#4394f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
+  height: 350px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (min-width: 900px) {
+  .background {
+    padding: 0 0 25px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  max-width: 960px;
+  width: 100%;
+}
+
+.panel {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.table {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .table {
+    flex-direction: row;
+  }
+}
+
+.table * {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.item {
+  border-bottom: 1px solid #e1f1ff;
+  padding: 25px;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 900px) {
+  .item {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    flex-basis: 100%;
+    padding: 25px 50px;
+  }
+
+  .item:last-child {
+    border-right: none;
+  }
+}
+
+.image {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.detail {
+  color: #016FF9;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 50px 0 25px;
+}
+
+.detail-item {
+  border-top: 1px solid #e1f1ff;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+.detail-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.applyto {
+  color: #016FF9;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348EFE;
+  display: inline-block;
+  margin: 25px 0;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e1f1ff;
+}
+
+.button.special {
+  background-color: #48aaff;
+  color: #fff;
+}
+
+.button.special:hover,
+.button.special:active {
+  background-color: #269aff;
+}
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+          <div class="panel table">
+      
+            <div class="item">
+              <img src="impor.png" alt="" class="image">
+              <h2 class="header">Bea Masuk</h2>
+              <ul class="detail">
+                <li class="detail-item">UU Nomor 17 Tahun 2006</li>
+                <li class="detail-item">tentang Kepabeanan</li>
+              </ul>
+              <span class="applyto">Barang Impor</span>
+              <a href="#/" class="button">Yuk, Cari Tahu</a>
+            </div>
+      
+            <div class="item">
+              <img src="ekspor.png" alt="" class="image">
+              <h2 class="header">Bea Keluar</h2>
+              <ul class="detail">
+                <li class="detail-item">UU Nomor 17 Tahun 2006</li>
+                <li class="detail-item">tentang Kepabeanan</li>
+              </ul>
+              <span class="applyto">Barang Ekspor</span>
+              <a href="#/" class="button special">Yuk, Cari Tahu</a>
+            </div>
+      
+            <div class="item">
+              <img src="cukai.png" alt="" class="image">
+              <h2 class="header">Cukai</h2>
+              <ul class="detail">
+                <li class="detail-item">UU Nomor 39 Tahun 2007</li>
+                <li class="detail-item">tentang Cukai</li>
+              </ul>
+              <span class="applyto">Barang Kena Cukai</span>
+              <a href="#/" class="button">Yuk, Cari Tahu</a>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+</body>
+</html>
